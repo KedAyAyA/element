@@ -26,7 +26,7 @@ const Notification = function(options) {
 
   if (isVNode(options.message)) {
     instance.$slots.default = [options.message];
-    options.message = 'REPLACED_BY_VNODE';
+    instance.message = 'REPLACED_BY_VNODE';
   }
   instance.id = id;
   instance.$mount();
